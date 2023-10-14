@@ -52,7 +52,7 @@ form {
     gap: 35px;
 }
 /* -------------LABEL INOUT ------------ */
-.inputBox{
+.inputBox {
     position: relative;
     padding: 10px;
 }
@@ -61,25 +61,32 @@ form {
     padding: .5rem;
     transition: all .5s ease-in;
     font-size: 1.4rem;
-    border: solid 3px rgb(0, 255, 0);
-    background-color: rgba(35, 68, 255, 0.144);
+    border: solid 3px rgb(255, 16, 240);
+    background-color: transparent;
     border-radius: .4rem;
     outline: none;
+    color: aliceblue;
 } 
-.inputBox span{
+
+.inputBox label {
     position: absolute;
     bottom: 1.5rem;
-    left: 1rem;
-    font-size: 1.2rem;
+    left: 1.6rem;
+    font-size: 1.5rem;
     pointer-events: none;
     transition: .5s;
 }
-.inputBox input:focus ~ span,
-.inputBox input:not(:placeholder-shown) ~ span {
-    color: rgb(136, 0, 63);
-    transform: translateY(-2.5rem); /* Puede que necesites ajustar esta distancia */
-}
 
+.inputBox input:focus ~ label,
+.inputBox input:not(:placeholder-shown) ~ label {
+    color: rgb(255, 16, 240);
+    transform: translateY(-1.8rem) translateX(.5rem); 
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    background-color: rgb(4, 23, 32);
+    border-left: solid 4px rgb(255, 16, 240);
+    border-right: solid 4px rgb(255, 16, 240);
+}
 /* -------------Buttosn------------ */
 button{
     border: 0;
@@ -89,7 +96,7 @@ button{
     letter-spacing: .1em;
     border-radius: 5px;
     margin-top: 20px;
-    font-size: 17px;
+    font-size: 2rem;
     transition: all .5s ease-in;
 } 
 button:hover{
@@ -129,8 +136,13 @@ footer {
     bottom: 0;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: rgb(117, 0, 45);
     color: aliceblue;
     font-size: 1.2rem;
     height: clamp(50px, 10vh, 300px);
+}
+
+footer a{
+    color: aliceblue;
 }

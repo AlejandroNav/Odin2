@@ -17,6 +17,7 @@
         <h1>Cine Deck</h1>
       </article>
     </aside>
+
     <form action="/path-to-your-backend-endpoint" method="POST">
       <section class="info-section">
         <h3>Welcome to CineDeck!</h3>
@@ -26,55 +27,45 @@
           of films.</p>
       </section>
       <section class="inputs-section">
-
-
-
-
         <div class="inputBox">
-          <span>First Name</span>
           <input type="text" id="firstName" name="firstName" pattern="[A-Za-z]+" placeholder=' '>
+          <label for="firstName">First Name</label>
         </div>
-
-
-
         <div class="inputBox">
-          <span >Last Name</span>
           <input type="text" id="lastName" name="lastName" pattern="[A-Za-z]+" placeholder=' '>
+          <label for="lastName">Last Name</label>
         </div>
         <div class="inputBox">
-          <span for="email">Email</span>
-          <input type="email" id="email" name="email" required="required">
+          <input type="email" id="email" name="email" placeholder=' '>
+          <label for="email">Email</label>
         </div>
         <div class="inputBox">
-          <span for="phone">Phone</span>
           <input type="tel" id="phone" name="phone" pattern="\d+" title="Please enter only numbers." placeholder=' '>
+          <label for="phone">Phone</label>
         </div>
         <div class="inputBox">
-          <span for="password1">Password</span>
           <input type="password" id="password1" name="password1" minlength="8" maxlength="20"
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}" placeholder=' '
             title="Must contain at least one number, one uppercase and lowercase letter, and between 8 to 20 characters.">
+          <label for="password1">Password</label>
         </div>
         <div class="inputBox">
-          <span for="password2">Confirm Password</span>
           <input type="password" id="password2" name="password2" minlength="8" maxlength="20"
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}" placeholder=' '
             title="Must contain at least one number, one uppercase and lowercase letter, and between 8 to 20 characters.">
+          <label for="password2">Confirm Password</label>
         </div>
       </section>
-
       <section>
-        <button type="button">Sendd</button>
+        <button type="button">Send Form</button>
       </section>
     </form>
-
   </main>
-
   <footer>
-    <p>Libelula Devs</p>
-    <p>Github</p>
-    <p>Lindefin</p>
-    <p>Libelulas.com</p>
+    <p><a href="#">Libelula Devs</a></p>
+    <p><a href="https://github.com/AlejandroNav/Odin2">Github Project Page</a></p>
+    <p><a href="https://www.linkedin.com/in/alejandro-nava-987115202/">LinkedIn</a></p>
+    <p><a href="#">Libelulas.com</a></p>    
   </footer>
 </body>
 
