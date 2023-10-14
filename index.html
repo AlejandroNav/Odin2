@@ -4,29 +4,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>CineDeck</title>
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
   <main>
-    <div class="image-container">IMage</div>
-    <form action="">
-      <textarea name="" id="" cols="30" rows="10"></textarea>
-      <input type="text">
-      <input type="datetime" name="" id="">
-      <input type="email" name="" id="">
-      <button type="button">Sendd</button>
+    <aside class="image-container">
+      <article class="bar-container">
+        <img src="./assets/images/Libelula Logo.png" alt="Logo de Cine Deck" class="logo">
+        <h1>Cine Deck</h1>
+      </article>
+    </aside>
+    <form action="/path-to-your-backend-endpoint" method="POST">
+      <section class="info section">
+        <h3>Bienvenido</h3>
+      </section>
+      <section class="inputs-section">
+        <div class="input-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" pattern="[A-Za-z]+" required>
+        </div>
+        <div class="input-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" pattern="[A-Za-z]+" required>
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" pattern="\d+" title="Please enter only numbers.">
+        </div>
+        <div class="input-group">
+          <label for="password1">Password</label>
+          <input type="password" id="password1" name="password1" minlength="8" maxlength="20"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}" required
+            title="Must contain at least one number, one uppercase and lowercase letter, and between 8 to 20 characters.">
+        </div>
+        <div class="input-group">
+          <label for="password2">Confirm Password</label>
+          <input type="password" id="password2" name="password2" minlength="8" maxlength="20"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}" required
+            title="Must contain at least one number, one uppercase and lowercase letter, and between 8 to 20 characters.">
+        </div>
+      </section>
+
+
+      <section>
+        <button type="button">Sendd</button>
+      </section>
     </form>
 
   </main>
-  
- <footer>
-  <p>Alejandro Nava</p>
-  <p>Github</p>
-  <p>Linkdein</p>
- </footer>
+
+  <footer>
+    <p>Alejandro Nava</p>
+    <p>Github</p>
+    <p>Linkdein</p>
+  </footer>
 </body>
 
 </html>
