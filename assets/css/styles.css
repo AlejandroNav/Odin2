@@ -1,9 +1,7 @@
-* {
-    scroll-behavior: smooth;
-}
+
 
 /* -------------BODY STYLES------------ */
-body{
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -12,7 +10,7 @@ body{
 }
 
 /* -------------MAIN STYLES------------ */
-main{
+main {
     flex: 1;
     background-color: rgb(255, 255, 255);
     font-size: 1rem;
@@ -21,68 +19,113 @@ main{
 
 /* -------------FORM STYLES------------ */
 
-form{
-    background-color: rgb(54, 99, 124);
+form {
+    background-color: rgb(4, 23, 32);
     width: 65vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    
+    color: aliceblue;
+
 }
 
-.info-section{
-    width: clamp(35ch, 70%, 80ch);
+.info-section {
+    width: clamp(35ch, 70%, 60ch);
+    line-height: 1.5;
 }
-.info-section h3{
-    font-size:   clamp(1.5rem, 1.8rem, 2.1rem);
+
+.info-section h3 {
+    font-size: clamp(1.5rem, 1.8rem, 2.1rem);
     margin: 1rem;
 }
-.info-section p{
-   color: rgb(187, 120, 94);
-   font-size: clamp(1rem, 1.2rem, 1.4rem);
-   margin: 1rem;
+
+.info-section p {
+    color: rgb(187, 120, 94);
+    font-size: clamp(1rem, 1.2rem, 1.4rem);
+    margin: 1rem;
 }
 
-.inputs-section{
+.inputs-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35px;
 }
+/* -------------LABEL INOUT ------------ */
+.inputBox{
+    position: relative;
+    padding: 10px;
+}
 
+.inputBox input {
+    padding: .5rem;
+    transition: all .5s ease-in;
+    font-size: 1.4rem;
+    border: solid 3px rgb(0, 255, 0);
+    background-color: rgba(35, 68, 255, 0.144);
+    border-radius: .4rem;
+    outline: none;
+} 
+.inputBox span{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1rem;
+    font-size: 1.2rem;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputBox input:focus ~ span,
+.inputBox input:not(:placeholder-shown) ~ span {
+    color: rgb(136, 0, 63);
+    transform: translateY(-2.5rem); /* Puede que necesites ajustar esta distancia */
+}
 
-
+/* -------------Buttosn------------ */
+button{
+    border: 0;
+    color: rgb(255, 168, 54);
+    background-color: black;
+    padding: 10px 50px;
+    letter-spacing: .1em;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 17px;
+    transition: all .5s ease-in;
+} 
+button:hover{
+    background-color: rgb(255, 168, 54);
+    color: black;
+}
 /* -------------IMAGES STYLES------------ */
 
-.image-container{
+.image-container {
     width: 50vw;
     background-image: url('../images/myke-simon-atsUqIm3wxo-unsplash.jpg');
-    background-position: center; /* Centra la imagen de fondo */
-    background-repeat: no-repeat; /* Asegúra que la imagen no se repita */
-    background-size: cover; /* Hace que la imagen cubra completamente el div */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.bar-container{
+
+.bar-container {
     font-family: 'Times New Roman', Times, serif;
     font-size: 4rem;
     color: aliceblue;
     background-color: rgba(0, 0, 0, 0.651);
-    text-align: center;
     font-weight: 700;
-    margin: 2rem;
     margin-top: 50%;
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
-.bar-container img{
-    width: 150px; /* Cambia este valor según el tamaño que desees para tu logo */
-    height: auto; /* Esto mantendrá la proporción de la imagen */
-    margin-right: 10px; /* Espacio a la derecha del logo, antes del título */
+.bar-container img {
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
     vertical-align: middle;
 }
 
 /* -------------FOOTER STYLES------------ */
-footer{
+footer {
     bottom: 0;
     display: flex;
     justify-content: space-around;
