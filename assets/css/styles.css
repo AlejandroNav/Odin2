@@ -1,0 +1,43 @@
+* {
+    scroll-behavior: smooth;
+}
+
+/* -------------BODY STYLES------------ */
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 62.5%;
+    
+}
+
+/* -------------MAIN STYLES------------ */
+main{
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    font-size: 1rem;
+    display: flex;
+}
+
+/* -------------FORM STYLES------------ */
+
+form{
+    background-color: rgb(199, 255, 255);
+    width: 90vw;
+}
+/* -------------IMAGES STYLES------------ */
+
+.image-container{
+    background-color: rgb(158, 158, 255);
+    width: 50vw;
+}
+
+/* -------------FOOTER STYLES------------ */
+footer{
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(212, 255, 172);
+    font-size: 1rem;
+    height: clamp(50px, 10vh, 300px);
+}
