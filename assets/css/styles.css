@@ -146,3 +146,58 @@ footer {
 footer a{
     color: aliceblue;
 }
+
+/* -------------Media Queries------------ */ 
+@media (max-width: 1060px) and (min-width: 770px) {
+    main{
+        flex-direction: column;
+    }
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        flex: 1;
+    }
+    .image-container {
+        width: 100%;
+        height:30vh;
+    }
+    .bar-container {
+        font-size: 3rem;
+        color: aliceblue;
+        background-color: rgba(0, 0, 0, 0.651);
+        margin-top: 0%;
+    }
+    
+}
+@media only screen and (max-width: 767px) {
+    main{
+        flex: 1 0 auto;
+        flex-direction: column;
+    }
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        padding: 2rem;
+        flex: 1;
+    }
+    .image-container {
+        width: 100%;
+        height: 20vh; /* Ajusta este valor según tus necesidades */    }
+    .bar-container {
+        font-size: 3rem;
+        color: aliceblue;
+        background-color: rgba(0, 0, 0, 0.651);
+        margin-top: 0%;
+    }
+    .inputs-section {
+        grid-template-columns: 11fr;
+    }
+    .info-section {
+        width: 80%;
+        line-height: 1.2;
+    }
+}
