@@ -8,3 +8,8 @@ Desktop Version:
 ![desktop-version](https://raw.githubusercontent.com/AlejandroNav/Odin2/main/assets/images/form-img-1.png)
 
 Small Screen Version:
+
+todo:
+
+add more media queries
+add a second page after login and js functionality
