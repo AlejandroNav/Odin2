@@ -10,6 +10,6 @@ Desktop Version:
 Small Screen Version:
 
 todo:
-
+add new logo
 add more media queries
 add a second page after login and js functionality
