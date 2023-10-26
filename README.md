@@ -1,3 +1,4 @@
+
 # Odin2 Form
 Odin Proyect for Login Form
 
@@ -13,3 +14,4 @@ todo:
 add new logo
 add more media queries
 add a second page after login and js functionality probably
+Make react version
