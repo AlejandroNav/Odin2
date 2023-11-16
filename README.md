@@ -15,4 +15,4 @@ add new logo
 add more media queries
 add a second page after login and js functionality probably
 Make react version
-make it more cool 
+make it more cool  and dab it
